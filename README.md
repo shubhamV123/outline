@@ -14,7 +14,7 @@ There are already lot of other extension/software that let you do this. However,
 ### Motivation of this project
 
 I don't want to get context switch while I am reading on internet. I dont want to pile up this information as most of the time it is not required. If something is important I can always save my pointers to my notes. I simply want something that jot down whatever point I like somewhere and I can review later. This also help in my notes to be less clutter. As you can make sure it is worth to save it in notes or not. So I didn't find something like this on internet.
-_Apple_ recently launced something similar quick notes but it only worked on safari and you need mac for that :-(
+_Apple_ recently launched something similar quick notes but it only worked on safari and you need mac for that :-(
 
 ### Built with
 
@@ -31,7 +31,8 @@ You can simply install this from chrome store. It should work any chrome related
 
 ### General Architecture
 
-This application does not use any external service. This application is privacy focused. So whatever number of notes you have its only between **you and your browser**. _Keep taking backup time to time other wise there is no way to restore your data_
+This application does not use any external service. This application is privacy focused. So whatever number of notes you have its only between **you and your browser**. _Keep taking backup time to time other wise there is no way to restore your data_.
+
 **Note:** In future will add to export and import your data
 
 #### Store
@@ -46,6 +47,20 @@ So inside api it just one store which saved these keys:
     - some other flags for feature related
 
 So there can be n number of pages inside urlname. So it will be distinguished by pathname. These are web jargons if you are not interested in tech part you can skip it otherwise you can always read this on internet.
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [x] Add License file
+- [x] Add back to top links
+- [ ] Add product demo gif/video
+- [ ] Add detailed architecture map which can be understand easily
+- [ ] Add issue template
+- [ ] Convert project to typescript
+- [ ] Enable sync to third party service or simple json download
+- [ ] Firefox support
+- [ ] Current code is part of POC and I didn't get time to refactor. So there are lot of improvement in code readability and build process
 
 <!-- CONTRIBUTING -->
 
