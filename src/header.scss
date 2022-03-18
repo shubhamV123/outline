@@ -1,0 +1,42 @@
+.header-button-container {
+  position: relative;
+  .button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    border-style: none;
+    cursor: pointer;
+
+    &--disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    &__post {
+      background-color: #0f1f40;
+      color: #fefffa;
+      margin-left: 8px;
+      margin-right: 20px;
+    }
+
+    &__editor {
+      background-color: #7fffd4;
+    }
+  }
+
+  .copy-container {
+    &__tooltip-text {
+      // visibility: hidden;
+      visibility: visible;
+      position: absolute;
+      top: 120px;
+      right: 50%;
+      transform: translate(50%, -50%);
+      background: black;
+      color: white;
+      padding: 8px;
+      font-size: 12px;
+      z-index: 1;
+      border-radius: 6px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.search-box {
+  width: calc(100% - 2px);
+  height: 44px;
+  padding: 12px 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: unset;
+  line-height: unset;
+  &:focus {
+    outline: 0;
+    border: 1px solid #0f1f40;
+  }
+}

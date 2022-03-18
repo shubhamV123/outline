@@ -1,0 +1,27 @@
+{
+  "name": "Outline: quick notes",
+  "description": "An extension that let you save you quick notes while browsing",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Click me",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "48": "chrome_icons/Outline64.png",
+    "128": "chrome_icons/Outline128.png",
+    "192": "chrome_icons/Outline192.png",
+    "256": "chrome_icons/Outline256.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "contextMenus",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

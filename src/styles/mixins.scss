@@ -1,0 +1,8 @@
+@mixin text-ellipsis {
+  white-space: nowrap;
+  max-width: 320px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}

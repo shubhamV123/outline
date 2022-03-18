@@ -1,0 +1,33 @@
+@import url("https://cdn.quilljs.com/1.3.7/quill.bubble.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+$j-content: start, center, space-between, space-around, space-evenly;
+
+@each $size in $j-content {
+  .justify-content-#{$size} {
+    justify-content: $size !important;
+  }
+}
+
+.cp {
+  cursor: pointer !important;
+}
+
+body {
+  padding: 16px;
+  width: 450px;
+  min-height: 500px;
+  font-size: 1em;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  background-color: #e7eef7;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center;
+}

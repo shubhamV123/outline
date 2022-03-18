@@ -1,0 +1,36 @@
+@import "./styles/mixins.scss";
+
+.card {
+  background-color: #0f1f40;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  &__header {
+    background-color: white;
+    overflow: hidden;
+    padding: 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    > div {
+      @include text-ellipsis;
+    }
+  }
+  &__body {
+    padding: 20px;
+    font-size: 0.875rem;
+    // color: #edf2f4;
+    color: #fefffa;
+    &-elements {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li > .card__body-specific-title {
+        @include text-ellipsis;
+      }
+      li:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
