@@ -28,6 +28,15 @@ const Header = () => {
       }
     };
   }, []);
+
+  const openInNewTab = useCallback(() => {
+    const newWindow = window.open(
+      "https://github.com/shubhamV123/outline",
+      "_blank",
+      "noopener,noreferrer"
+    );
+    if (newWindow) newWindow.opener = null;
+  }, []);
   const showNotification = useCallback(() => {
     setShowTooltip(true);
     let timer = setTimeout(() => {
@@ -58,7 +67,7 @@ const Header = () => {
         >
           View all post
         </button>
-        <GithubIcon className="cp" />
+        <GithubIcon className="cp" onClick={openInNewTab} />
         {!isListButtonDisabled && (
           <>
             {activeContent?.content?.length > 0 && (

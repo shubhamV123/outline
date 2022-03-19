@@ -28,7 +28,7 @@ const CONTEXT_MENU_CONTENTS = {
 function setUpContextMenus() {
   CONTEXT_MENU_CONTENTS.forSelection.forEach(function (commandId) {
     chrome.contextMenus.create({
-      title: "Add to notes",
+      title: "Add to my outline",
       id: commandId,
       contexts: ["selection"],
     });

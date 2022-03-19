@@ -72,7 +72,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. You have to run two different command for development. `yarn run dev-build` and after that `yarn run extension-build-watch`. This will start your both server in watch mode.
+2. You have to run two different command for development. `yarn run dev-build` . This will start your server in watch mode.
 3. After that you have to refresh chrome extension after any change you have done.
 4. _Optional:_ If you never worked on chrome extension development before. Read this [guide](https://developer.chrome.com/docs/extensions/mv3/getstarted/)
 5. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
