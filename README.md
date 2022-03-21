@@ -63,7 +63,7 @@ Since this extension rely on chrome `storage` [api](https://developer.chrome.com
 - [x] Add back to top links
 - [ ] Add product demo gif/video
 - [ ] Add detailed architecture map which can be understand easily
-- [ ] Add issue template
+- [x] Add issue template
 - [ ] Convert project to typescript
 - [ ] Enable sync to third party service or simple json download
 - [ ] Firefox support
@@ -93,9 +93,11 @@ Don't forget to give the project a star! Thanks again!
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+These are things I used to create this project!
 
 - [Readme Template](https://github.com/othneildrew/Best-README-Template)
 - [Chrome api reference](https://developer.chrome.com/docs/extensions/reference/)
+- [Icons](https://icons8.com)
+- [Logo](https://www.canva.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
