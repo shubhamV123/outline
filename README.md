@@ -20,7 +20,7 @@ _Apple_ recently launched something similar quick notes but it only worked on sa
 
 - [React.js](https://reactjs.org/)
 - [Vite.js](https://vitejs.dev)
-- [Qull.js] (https://quilljs.com)
+- [Qull.js](https://quilljs.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
