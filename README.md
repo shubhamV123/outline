@@ -20,6 +20,7 @@ _Apple_ recently launched something similar quick notes but it only worked on sa
 
 - [React.js](https://reactjs.org/)
 - [Vite.js](https://vitejs.dev)
+- [Qull.js] (https://quilljs.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -47,6 +48,12 @@ So inside api it just one store which saved these keys:
     - some other flags for feature related
 
 So there can be n number of pages inside urlname. So it will be distinguished by pathname. These are web jargons if you are not interested in tech part you can skip it otherwise you can always read this on internet.
+
+<!-- CAVEATS -->
+
+### Caveats
+
+Since this extension rely on chrome `storage` [api](https://developer.chrome.com/docs/extensions/reference/storage/). So it has limited memory. More you can look into chrome api. So if specific notes are not required, remove time to time to have more sync memory. Need to figure out better way to handle this.
 
 <!-- ROADMAP -->
 
