@@ -5,7 +5,7 @@ async function getCurrentTab() {
 }
 
 async function getStore() {
-  const items = await chrome.storage.sync.get("store");
+  const items = await chrome.storage.local.get("store");
   return items;
 }
 
@@ -62,7 +62,10 @@ chrome.contextMenus.onClicked.addListener(async function (itemData) {
 
   let currentPageNotesLength = 0;
   let store;
-  chrome.storage.sync.get(null, function (items) {
+  chrome.storage.local.get(null, function (items) {
+    if (chrome.runtime.lastError) {
+      return chrome.runtime.lastError;
+    }
     /**
      * check if specific page exist
      */
@@ -97,7 +100,7 @@ chrome.contextMenus.onClicked.addListener(async function (itemData) {
       };
     }
 
-    chrome.storage.sync.set({ store }, function () {
+    chrome.storage.local.set({ store }, function () {
       /**
        * Enabled this when badge bug fixed
        */

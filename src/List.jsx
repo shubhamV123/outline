@@ -51,8 +51,7 @@ const List = () => {
   const [filteredStore, setFilteredStore] = useState({});
   useEffect(() => {
     try {
-      chrome.storage.sync.get("store", async (items) => {
-        // Pass any observed errors down the promise chain.
+      chrome.storage.local.get("store", async (items) => {
         if (chrome.runtime.lastError) {
           return chrome.runtime.lastError;
         }
@@ -61,6 +60,9 @@ const List = () => {
         setFilteredStore(items?.store ?? {});
       });
       chrome.storage.onChanged.addListener(async (changes, namespace) => {
+        if (chrome.runtime.lastError) {
+          return chrome.runtime.lastError;
+        }
         const { newValue, oldValue } = changes[STORE_DATA_KEY];
         setStore(newValue ?? {});
         setFilteredStore(newValue ?? {});

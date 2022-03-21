@@ -7,7 +7,7 @@ async function getCurrentTab() {
 }
 
 async function getStore(key = "store") {
-  const items = await chrome.storage.sync.get(key);
+  const items = await chrome.storage.local.get(key);
   return items;
 }
 

@@ -53,7 +53,7 @@ So there can be n number of pages inside urlname. So it will be distinguished by
 
 ### Caveats
 
-Since this extension rely on chrome `storage` [api](https://developer.chrome.com/docs/extensions/reference/storage/). So it has limited memory. More you can look into chrome api. So if specific notes are not required, remove time to time to have more sync memory. Need to figure out better way to handle this.
+Since this extension rely on chrome `storage` [api](https://developer.chrome.com/docs/extensions/reference/storage/). So it has limited memory. More you can look into chrome api. So if specific notes are not required, remove time to time to have more sync memory. Currently its using `local` api with `unlimitedStorage` permission. _So your data will not be synced, keep this in mind_
 
 <!-- ROADMAP -->
 

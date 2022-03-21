@@ -76,7 +76,10 @@ function App({ type }) {
 
   const onChange = debounce(function (deltaChange, oldDelta, source) {
     if (source === "user") {
-      chrome.storage.sync.get("store", async (items) => {
+      chrome.storage.local.get("store", async (items) => {
+        if (chrome.runtime.lastError) {
+          return chrome.runtime.lastError;
+        }
         const { store } = items;
         const { pathname, hostname, title } = await getCurrentTabStatus();
 
@@ -108,12 +111,13 @@ function App({ type }) {
           },
         };
 
-        chrome.storage.sync.set({ store: newStore }, function (items) {
+        chrome.storage.local.set({ store: newStore }, function (items) {
           console.log("Success");
         });
       });
     }
   }, 200);
+
   return (
     <div className="App">
       <div id="editor-container"></div>

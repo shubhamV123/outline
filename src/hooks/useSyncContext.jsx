@@ -59,7 +59,7 @@ const useSyncContext = () => {
             };
       const mynewData = bookMarks;
 
-      chrome.storage.sync.set({ store: mynewData }, function (items) {});
+      chrome.storage.local.set({ store: mynewData }, function (items) {});
     } else {
       // const editorType
       const speicificPost = items?.store?.[url]?.[post];
@@ -73,7 +73,7 @@ const useSyncContext = () => {
 
   useEffect(() => {
     try {
-      chrome.storage.sync.get(null, async (items) => {
+      chrome.storage.local.get(null, async (items) => {
         // Pass any observed errors down the promise chain.
         if (chrome.runtime.lastError) {
           return chrome.runtime.lastError;

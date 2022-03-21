@@ -1,7 +1,7 @@
 {
   "name": "Outline: quick notes",
   "description": "An extension that let you save you quick notes while browsing",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "manifest_version": 3,
   "action": {
     "default_title": "Click me",
